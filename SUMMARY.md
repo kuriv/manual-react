@@ -1,5 +1,5 @@
 # Summary
 
 * [React](README.md)
-    * [安装](docs/安装.md)
+    * [安装与使用](docs/安装与使用.md)
 
