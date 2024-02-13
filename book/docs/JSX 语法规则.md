@@ -30,7 +30,7 @@
 </script>
 ```
 
-> 如果在虚拟 DOM 中使用大写字母开头的标签，则 React 默认会将其作为组件渲染输出。如果使用小写字母开头的标签，则 React 默认会将其作为 HTML 同名标签渲染输出，当 HTML 标签中不存在同名标签时，以下代码将会报错。
+> 如果在虚拟 DOM 中使用大写字母开头的标签，则 React 默认会将其作为组件渲染输出。如果使用小写字母开头的标签，则 React 默认会将其作为 HTML 同名标签渲染输出，当 HTML 标签中不存在同名标签时则会报错。
 
 ```jsx
 <script type="text/babel">
@@ -63,7 +63,7 @@
 
 ```jsx
 <script type="text/babel">
-    const App = <h1 style={{color: 'red', fontSize: '12px'}}>Hello React</h1>;
+    const App = <h1 style={\{color: 'red', fontSize: '12px'\}}>Hello React</h1>;
     ReactDOM.render(App, document.getElementById('app'));
 </script>
 ```
