@@ -25,7 +25,7 @@
 
 ```jsx
 <script type="text/babel">
-    const App = <input type="text"></input>;
+    const App = <input type="text"/>;
     ReactDOM.render(App, document.getElementById('app'));
 </script>
 ```
