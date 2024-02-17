@@ -5,7 +5,7 @@
 ```jsx
 <script type="text/babel">
     const App = '<h1>Hello React</h1>';
-    ReactDOM.render(App, document.getElementById('app'));
+	ReactDOM.createRoot(document.getElementById('app')).render(App);
 </script>
 ```
 
@@ -17,7 +17,7 @@
         <h1>Hello</h1>
         <h2>React</h2>
     );
-    ReactDOM.render(App, document.getElementById('app'));
+	ReactDOM.createRoot(document.getElementById('app')).render(App);
 </script>
 ```
 
@@ -26,7 +26,7 @@
 ```jsx
 <script type="text/babel">
     const App = <input type="text"/>;
-    ReactDOM.render(App, document.getElementById('app'));
+	ReactDOM.createRoot(document.getElementById('app')).render(App);
 </script>
 ```
 
@@ -35,7 +35,7 @@
 ```jsx
 <script type="text/babel">
     const App = <app>Hello React</app>;
-    ReactDOM.render(App, document.getElementById('app'));
+	ReactDOM.createRoot(document.getElementById('app')).render(App);
 </script>
 ```
 
@@ -45,7 +45,7 @@
 <script type="text/babel">
     let foo = 'bar';
     const App = <h1 id={foo}>Hello React</h1>;
-    ReactDOM.render(App, document.getElementById('app'));
+	ReactDOM.createRoot(document.getElementById('app')).render(App);
 </script>
 ```
 
@@ -55,7 +55,7 @@
 <script type="text/babel">
     let foo = 'bar';
     const App = <h1 className={foo}>Hello React</h1>;
-    ReactDOM.render(App, document.getElementById('app'));
+	ReactDOM.createRoot(document.getElementById('app')).render(App);
 </script>
 ```
 
@@ -64,6 +64,6 @@
 ```jsx
 <script type="text/babel">
     const App = <h1 style={\{color: 'red', fontSize: '12px'\}}>Hello React</h1>;
-    ReactDOM.render(App, document.getElementById('app'));
+	ReactDOM.createRoot(document.getElementById('app')).render(App);
 </script>
 ```

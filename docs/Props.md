@@ -1,4 +1,4 @@
-# 属性
+# Props
 
 可以像使用 HTML 属性一样，将所需的数据内容传递给组件。
 
@@ -21,7 +21,7 @@
         }
     }
 
-    ReactDOM.render(<Person name="Tom" age="18"/>, document.getElementById('app'));
+    ReactDOM.createRoot(document.getElementById('app')).render(<Person name="Tom" age="18"/>);
 </script>
 ```
 
@@ -50,13 +50,14 @@
         name: 'Tom',
         age: 18
     }
-    ReactDOM.render(<Person {...Props}/>, document.getElementById('app'));
+    ReactDOM.createRoot(document.getElementById('app')).render(<Person {...Props}/>);
 </script>
 ```
 
 引入 prop-types 库文件，即可校验传递给组件的数据，如果数据不符合校验规则，则代码将会报错。
 
 ```jsx
+<script type="text/javascript" src="prop-types.js"></script>
 <script type="text/babel">
     class Person extends React.Component {
         static propTypes = {
@@ -80,7 +81,7 @@
         }
     }
 
-    ReactDOM.render(<Person/>, document.getElementById('app'));
+    ReactDOM.createRoot(document.getElementById('app')).render(<Person/>);
 </script>
 ```
 
@@ -116,7 +117,7 @@
         }
     }
 
-    ReactDOM.render(<Person/>, document.getElementById('app'));
+    ReactDOM.createRoot(document.getElementById('app')).render(<Person/>);
 </script>
 ```
 

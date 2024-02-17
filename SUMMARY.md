@@ -6,6 +6,9 @@
     * [开发者工具](docs/开发者工具.md)
     * [函数式组件](docs/函数式组件.md)
     * [类式组件](docs/类式组件.md)
-    * [状态](docs/状态.md)
-    * [属性](docs/属性.md)
+    * [State](docs/State.md)
+    * [Props](docs/Props.md)
+    * [Refs](docs/Refs.md)
+    * [高阶函数](docs/高阶函数.md)
+    * [函数柯里化](docs/函数柯里化.md)
 

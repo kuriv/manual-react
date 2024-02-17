@@ -1,6 +1,6 @@
-# 状态
+# State
 
-组件通常需要根据交互更改显示的内容。以下代码为容器绑定了一个点击事件，当用户点击容器时，组件中的数据将会被修改。
+以下代码为容器绑定了一个点击事件，当用户点击容器时，组件中的数据将会被修改。
 
 ```jsx
 <script type="text/babel">
@@ -22,7 +22,7 @@
         }
     }
 
-    ReactDOM.render(<Component/>, document.getElementById('app'));
+    ReactDOM.createRoot(document.getElementById('app')).render(<Component/>);
 </script>
 ```
 
@@ -50,7 +50,7 @@
         }
     }
 
-    ReactDOM.render(<Component/>, document.getElementById('app'));
+    ReactDOM.createRoot(document.getElementById('app')).render(<Component/>);
 </script>
 ```
 
